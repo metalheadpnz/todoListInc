@@ -29,3 +29,8 @@
     background-color: cornflowerblue;
     color: white;
 }
+
+.error{
+    outline: none;
+    border: 2px dashed orangered;
+}

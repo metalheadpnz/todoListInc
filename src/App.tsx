@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
-
+// test2
 export type FilterValuesType = "all" | "active" | "completed";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         setTasks(newTasks);
     }
 
+<<<<<<< HEAD
     function changeStatusIsDone(id: string, status: boolean) {
         tasks.forEach((t) => {
             if (t.id === id) {
@@ -33,6 +34,10 @@ function App() {
             }
         })
         setTasks([...tasks])
+=======
+    const changeTaskStatus = (id: string, isDone: boolean) => {
+        setTasks(tasks.map((t) => id === t.id ? {...t, isDone: isDone} : t))
+>>>>>>> withViktor
     }
 
     let [filter, setFilter] = useState<FilterValuesType>("all");
@@ -59,7 +64,11 @@ function App() {
                       changeFilter={changeFilter}
                       addTask={addTask}
                       filter={filter}
+<<<<<<< HEAD
                       changeStatusIsDone={changeStatusIsDone}/>
+=======
+                      changeTaskStatus={changeTaskStatus}/>
+>>>>>>> withViktor
         </div>
     );
 }
