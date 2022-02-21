@@ -26,6 +26,15 @@ function App() {
         setTasks(newTasks);
     }
 
+    function changeStatusIsDone(id: string, status: boolean) {
+        tasks.forEach((t) => {
+            if (t.id === id) {
+                t.isDone = !t.isDone
+            }
+        })
+        setTasks([...tasks])
+    }
+
     let [filter, setFilter] = useState<FilterValuesType>("all");
 
     let tasksForTodolist = tasks;
@@ -49,7 +58,8 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
-                      filter={filter}/>
+                      filter={filter}
+                      changeStatusIsDone={changeStatusIsDone}/>
         </div>
     );
 }
