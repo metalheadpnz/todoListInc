@@ -1,6 +1,6 @@
 import React, {ChangeEvent, CSSProperties, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from './App';
-
+//continue with Viktor test
 type TaskType = {
     id: string
     title: string
