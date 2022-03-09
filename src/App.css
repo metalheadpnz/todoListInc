@@ -1,36 +1,24 @@
 .App {
-    padding: 30px;
-    display: flex;
+  padding: 30px;
+  display: flex;
 }
 
 .App > div {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
-.task-completed {
-    opacity: .5;
+.error {
+  border: red 1px solid;
 }
 
-.task{
-    font-weight: bold;
-
+.error-message {
+  color: red;
 }
 
-.filter-header{
-    font-size: 20px;
-    margin-left: 20px;
-    color: white;
-    background-color: cornflowerblue;
-    display: inline-block;
-    border-radius: 50%;
+.active-filter {
+  background-color: aquamarine;
 }
 
-.button-active{
-    background-color: cornflowerblue;
-    color: white;
-}
-
-.error{
-    outline: none;
-    border: 2px dashed orangered;
+.is-done {
+  opacity: 0.5;
 }
