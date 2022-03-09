@@ -3,7 +3,7 @@ import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
 import {AddItemForm} from "./components/AddItemForm";
-import {log} from "util";
+//версия на 8.03
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
